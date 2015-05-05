@@ -1,0 +1,81 @@
+#####################################################
+## Full documentation about Git can be found here: ##
+##          http://git-scm.com/book/en/v2          ##
+#####################################################
+
+============================================================================
+	INSTALLATION AND CONFIGURATION
+============================================================================
+
+1. Install Git, open a terminal (ctrl+alt+t)
+->	sudo apt-get install git
+
+2. Go to github.com and make an account.
+	# Send the username to:
+	# t.a.c.j.m.albers@student.tue.nl
+
+3. Configure git, open a terminal (ctrl+alt+t)
+->	git config --global user.name "Your username with the quotes"
+->	git config --global user.email "Your email adress with the quotes"
+->	git config --global core.editor gedit
+If you want to check your settings, you can use:
+->	git config --list
+
+4. Add the remote server
+->	git remote add origin https://github.com/TomAlb/EMC_group_4.git
+
+5. Receive all the information from the github server:
+	# Go to the place where the data should be placed. (for instance in cd /home)
+->	git pull origin master
+	# A pull command gets all the files from the server and places them in the folder.
+	# In this case, the branch master is pulled from the server. Other branches are possible to pull from the server, but are sofar not created yet.
+	# This will only work if Tom has added your accountname as a collaborater of the project.
+	# Make sure this is done first!
+
+============================================================================
+	WORKING ON PROJECT
+============================================================================
+
+6. Start working on whatever you want, and editing whatever you want.
+
+============================================================================
+	COMMIT YOUR WORK TO THE REPOSITORY AND SEND IT TO GITHUB
+============================================================================
+
+7. Now find out which files you want to get online
+->	git status -s
+	# results in a list of all files in the directory which are edited, created
+
+8. Add files to your track 
+->	git add *filename*
+	# if you want to add directories, go to that directory and type:
+->	git add .
+	# be carefully, not every file should be commited.
+	# Also an interactive shell could be used to add files, just type in the terminal:
+->	git add -i
+	# Then options are given of what to do
+
+9. Commit files
+->	git commit -m 'Comment whatever you want, like what you have changed or something like that, between single quotes'
+
+10. Send it to github
+->	git push origin master
+	# log in with your account and password.
+	# Again, this will only work if youre assigned to the project as a colaborater
+
+============================================================================
+	UPDATE YOUR PROJECT FROM GITHUB AND START WORKING AGAIN
+============================================================================
+11. Update your repository
+->	git pull origin master
+	# if you want to see who changed what, type in:
+->	git log
+
+============================================================================
+	SET UP BRANCHES
+============================================================================
+	# Start a branch named testing
+->	git branch testing
+
+
+
