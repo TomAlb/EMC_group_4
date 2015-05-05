@@ -74,8 +74,35 @@ If you want to check your settings, you can use:
 ============================================================================
 	SET UP BRANCHES
 ============================================================================
-	# Start a branch named testing
+12.	# Start a branch named testing
 ->	git branch testing
+
+13.	# Start working in the branch testing
+->	git checkout testing
+	# Now you can change whatever you want
+
+14.	# Add files and commit, just like you did before
+->	git add TestingFiles.txt
+->	git commit -m 'Example of a branch'
+
+15.	# Upload branch to github
+->	git push origin testing
+
+============================================================================
+	WORK FURTHER IN CERTAIN BRANCHES
+============================================================================
+16.	# To find out in which branch you are working, and which branches exist, type in
+->	git branch
+	# For more information about the branches type -v behind the command
+->	git branch -v
+
+17.	# For getting a branch local on your pc, pull the documents the same way as before
+->	git pull origin testing
+
+============================================================================
+	MERGING BRANCHES
+============================================================================
+
 
 
 
