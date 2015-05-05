@@ -110,6 +110,7 @@ If you want to check your settings, you can use:
 
 18.	# checkout the branch you want to merge
 ->	git checkout testing
+adhfgghsdvsdghv
 
 
 
